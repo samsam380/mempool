@@ -29,8 +29,7 @@
         }
       }
       @if (!enterpriseInfo || enterpriseInfo.dualLogo) {
-        <app-svg-images *ngIf="!officialMempoolSpace" name="mempoolSpace" viewBox="0 0 500 126" class="mempool-logo" [ngStyle]="{'opacity': connectionState.val === 2 ? 1 : 0.5 }"></app-svg-images>
-        <app-svg-images *ngIf="officialMempoolSpace" name="officialMempoolSpace" viewBox="0 0 500 126"></app-svg-images>
+        <span [ngStyle]="{'opacity': connectionState.val === 2 ? 1 : 0.5 }" style="align-self: center; color: var(--fg); font-size: 1.25rem; font-weight: 700; letter-spacing: .08em; white-space: nowrap;">SAM256<span style="color: #f7931a;">.MEMPOOL</span></span>
       }
       <div class="connection-badge">
         <div class="badge bg-warning" *ngIf="connectionState.val === 0" i18n="master-page.offline">Offline</div>
@@ -50,8 +49,7 @@
         }
       }
       @if (!enterpriseInfo || enterpriseInfo.dualLogo) {
-        <app-svg-images *ngIf="!officialMempoolSpace" name="mempoolSpace" viewBox="0 0 500 126" class="mempool-logo" [ngStyle]="{'opacity': connectionState.val === 2 ? 1 : 0.5 }"></app-svg-images>
-        <app-svg-images *ngIf="officialMempoolSpace" name="officialMempoolSpace" viewBox="0 0 500 126"></app-svg-images>
+        <span [ngStyle]="{'opacity': connectionState.val === 2 ? 1 : 0.5 }" style="align-self: center; color: var(--fg); font-size: 1.05rem; font-weight: 700; letter-spacing: .06em; white-space: nowrap;">SAM256<span style="color: #f7931a;">.MEMPOOL</span></span>
       }
       <div class="connection-badge">
         <div class="badge bg-warning" *ngIf="connectionState.val === 0" i18n="master-page.offline">Offline</div>
